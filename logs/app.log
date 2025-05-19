@@ -1,0 +1,344 @@
+2025-05-18 22:42:44 - INFO - Database tables initialized
+2025-05-18 22:43:42 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-18 22:43:42
+Path: /docs
+Method: GET
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': '"Windows"', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-18 22:43:42 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.02s
+==================================================
+2025-05-18 22:43:44 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-18 22:43:44
+Path: /openapi.json
+Method: GET
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json,*/*', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-18 22:43:44 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.03s
+==================================================
+2025-05-18 22:44:18 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-18 22:44:18
+Path: /auth/register
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '53', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-18 22:44:18 - INFO - 
+==================================================
+Response Info:
+Status Code: 422
+Process Time: 0.01s
+==================================================
+2025-05-18 22:44:48 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-18 22:44:48
+Path: /auth/register
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '120', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-18 22:44:48 - ERROR - 
+==================================================
+Error Info:
+Error Type: AttributeError
+Error Message: '_AsyncGeneratorContextManager' object has no attribute 'add'
+==================================================
+2025-05-19 07:36:21 - INFO - Database tables initialized
+2025-05-19 07:40:14 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 07:40:14
+Path: /docs
+Method: GET
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'cache-control': 'max-age=0', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': '"Windows"', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 07:40:14 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.00s
+==================================================
+2025-05-19 07:40:14 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 07:40:14
+Path: /openapi.json
+Method: GET
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json,*/*', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 07:40:14 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.01s
+==================================================
+2025-05-19 07:40:34 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 07:40:34
+Path: /auth/register
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '49', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 07:40:34 - ERROR - 
+==================================================
+Error Info:
+Error Type: AttributeError
+Error Message: 'UserCreate' object has no attribute 'email'
+==================================================
+2025-05-19 07:41:32 - INFO - Database tables initialized
+2025-05-19 07:41:36 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 07:41:36
+Path: /auth/register
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '49', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 07:41:36 - ERROR - 
+==================================================
+Error Info:
+Error Type: AttributeError
+Error Message: '_AsyncGeneratorContextManager' object has no attribute 'add'
+==================================================
+2025-05-19 07:48:09 - INFO - Database tables initialized
+2025-05-19 07:48:20 - INFO - Database tables initialized
+2025-05-19 07:54:45 - INFO - Database tables initialized
+2025-05-19 07:56:41 - INFO - Database tables initialized
+2025-05-19 07:57:14 - INFO - Database tables initialized
+2025-05-19 07:57:55 - INFO - Database tables initialized
+2025-05-19 07:59:40 - INFO - Database tables initialized
+2025-05-19 07:59:57 - INFO - Database tables initialized
+2025-05-19 08:00:00 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 08:00:00
+Path: /auth/register
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '49', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 08:00:01 - ERROR - 
+==================================================
+Error Info:
+Error Type: ProgrammingError
+Error Message: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedColumnError'>: column users.username does not exist
+[SQL: SELECT users.id, users.username, users.hashed_password, users.mobile, users.firstname, users.lastname, users.email, users.national_id, users.is_active, users.verification_code, users.verification_code_expires, users.access_token, users.refresh_token, users.token_expires_at, users.created_at, users.updated_at 
+FROM users 
+WHERE users.mobile = $1::VARCHAR]
+[parameters: ('leila',)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+==================================================
+2025-05-19 08:28:48 - ERROR - Error initializing database: 'functools._lru_cache_wrapper' object has no attribute 'POSTGRES_HOST'
+2025-05-19 08:29:13 - ERROR - Error initializing database: 'functools._lru_cache_wrapper' object has no attribute 'POSTGRES_HOST'
+2025-05-19 08:29:21 - ERROR - Error initializing database: 'functools._lru_cache_wrapper' object has no attribute 'POSTGRES_HOST'
+2025-05-19 08:29:56 - ERROR - Error initializing database: 'functools._lru_cache_wrapper' object has no attribute 'POSTGRES_HOST'
+2025-05-19 08:31:35 - ERROR - Error initializing database: 'functools._lru_cache_wrapper' object has no attribute 'POSTGRES_HOST'
+2025-05-19 08:31:47 - INFO - Database and tables initialized successfully
+2025-05-19 08:32:05 - INFO - Database and tables initialized successfully
+2025-05-19 08:32:08 - INFO - Database and tables initialized successfully
+2025-05-19 08:32:19 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 08:32:19
+Path: /auth/register
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '49', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 08:32:19 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.61s
+==================================================
+2025-05-19 08:33:06 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 08:33:06
+Path: /auth/login
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '49', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 08:33:06 - INFO - 
+==================================================
+Response Info:
+Status Code: 401
+Process Time: 0.01s
+==================================================
+2025-05-19 08:37:23 - INFO - Database and tables initialized successfully
+2025-05-19 08:39:15 - INFO - Database and tables initialized successfully
+2025-05-19 08:39:21 - INFO - Database and tables initialized successfully
+2025-05-19 08:39:27 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 08:39:27
+Path: /auth/register
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '49', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 08:39:28 - INFO - 
+==================================================
+Response Info:
+Status Code: 500
+Process Time: 0.59s
+==================================================
+2025-05-19 08:41:33 - INFO - Database and tables initialized successfully
+2025-05-19 08:41:55 - INFO - Database and tables initialized successfully
+2025-05-19 08:41:57 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 08:41:57
+Path: /auth/register
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '49', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 08:41:57 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.29s
+==================================================
+2025-05-19 08:42:47 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 08:42:47
+Path: /auth/login
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '49', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 08:42:47 - ERROR - 
+==================================================
+Error Info:
+Error Type: AttributeError
+Error Message: '_AsyncGeneratorContextManager' object has no attribute 'commit'
+==================================================
+2025-05-19 08:49:34 - INFO - Database and tables initialized successfully
+2025-05-19 08:58:02 - INFO - Database and tables initialized successfully
+2025-05-19 08:58:49 - INFO - Database and tables initialized successfully
+2025-05-19 08:59:03 - INFO - Database and tables initialized successfully
+2025-05-19 08:59:15 - INFO - Database and tables initialized successfully
+2025-05-19 09:01:17 - INFO - Database and tables initialized successfully
+2025-05-19 09:05:13 - INFO - Database and tables initialized successfully
+2025-05-19 09:07:21 - INFO - Database and tables initialized successfully
+2025-05-19 09:08:15 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 09:08:15
+Path: /auth/login
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '49', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 09:08:15 - ERROR - 
+==================================================
+Error Info:
+Error Type: NameError
+Error Message: name 'db' is not defined
+==================================================
+2025-05-19 09:08:47 - INFO - Database and tables initialized successfully
+2025-05-19 09:09:04 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 09:09:04
+Path: /auth/login
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '49', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 09:09:04 - ERROR - 
+==================================================
+Error Info:
+Error Type: NameError
+Error Message: name 'db' is not defined
+==================================================
+2025-05-19 09:09:34 - INFO - Database and tables initialized successfully
+2025-05-19 09:09:39 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 09:09:39
+Path: /auth/login
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '49', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 09:09:40 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.39s
+==================================================
+2025-05-19 09:14:44 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 09:14:44
+Path: /auth/token
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '50', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Basic Og==', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'x-requested-with': 'XMLHttpRequest', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json, text/plain, */*', 'content-type': 'application/x-www-form-urlencoded', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 09:14:44 - INFO - 
+==================================================
+Response Info:
+Status Code: 401
+Process Time: 0.02s
+==================================================
+2025-05-19 09:26:12 - INFO - Database and tables initialized successfully
+2025-05-19 09:26:24 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 09:26:24
+Path: /auth/token
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '50', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Basic Og==', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'x-requested-with': 'XMLHttpRequest', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json, text/plain, */*', 'content-type': 'application/x-www-form-urlencoded', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 09:26:24 - INFO - 
+==================================================
+Response Info:
+Status Code: 401
+Process Time: 0.02s
+==================================================
+2025-05-19 09:27:24 - INFO - Database and tables initialized successfully
+2025-05-19 09:27:39 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 09:27:39
+Path: /auth/token
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '50', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Basic Og==', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'x-requested-with': 'XMLHttpRequest', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json, text/plain, */*', 'content-type': 'application/x-www-form-urlencoded', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 09:27:39 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.02s
+==================================================
+2025-05-19 09:43:36 - INFO - Database and tables initialized successfully
+2025-05-19 09:44:04 - INFO - Database and tables initialized successfully
+2025-05-19 09:44:12 - INFO - Database and tables initialized successfully
