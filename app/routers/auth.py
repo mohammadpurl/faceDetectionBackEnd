@@ -104,7 +104,7 @@ async def login(
 
     tokens = await create_tokens(user)
     await update_user_tokens_in_db(
-        user, tokens.access_token, tokens.refresh_token, tokens.expires_at
+        user, tokens["access_token"], tokens["refresh_token"], tokens.get("expires_at")
     )
 
     return TokenResponse(**tokens)

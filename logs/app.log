@@ -1013,3 +1013,149 @@ Response Info:
 Status Code: 200
 Process Time: 0.06s
 ==================================================
+2025-05-19 13:21:37 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 13:21:37
+Path: /auth/me
+Method: GET
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidXNlcm5hbWUiOiJsZWlsYSIsInNjb3BlcyI6WyJ1c2VyIl0sImV4cCI6MTc0NzY1OTI0NH0.M8CXPc-9j09ttUsiC2CaCfum7yzpKpmR4Lh96u1mPTE', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 13:21:37 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.01s
+==================================================
+2025-05-19 13:25:38 - INFO - Database and tables initialized successfully
+2025-05-19 13:25:40 - INFO - Database and tables initialized successfully
+2025-05-19 13:26:08 - INFO - Database and tables initialized successfully
+2025-05-19 13:31:31 - INFO - Database and tables initialized successfully
+2025-05-19 13:32:04 - INFO - Database and tables initialized successfully
+2025-05-19 13:41:06 - INFO - Database and tables initialized successfully
+2025-05-19 13:41:31 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 13:41:31
+Path: /auth/token
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '50', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Basic Og==', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'x-requested-with': 'XMLHttpRequest', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json, text/plain, */*', 'content-type': 'application/x-www-form-urlencoded', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 13:41:31 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.20s
+==================================================
+2025-05-19 13:41:47 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 13:41:47
+Path: /user/upload-photo/
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '87884', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidXNlcm5hbWUiOiJsZWlsYSIsInNjb3BlcyI6WyJ1c2VyIl0sImV4cCI6MTc0NzY2Mzg5MX0.XWJoD8wKigwtjC75dMd0-P6cS4Hou73LLZ-N3yGKFc0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'multipart/form-data; boundary=----WebKitFormBoundaryqKQHDW55xaBPotID', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 13:41:48 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.60s
+==================================================
+2025-05-19 13:42:48 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 13:42:48
+Path: /auth/register
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '48', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 13:42:49 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 1.05s
+==================================================
+2025-05-19 13:43:06 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 13:43:06
+Path: /auth/login
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '48', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 13:43:06 - INFO - 
+==================================================
+Response Info:
+Status Code: 401
+Process Time: 0.02s
+==================================================
+2025-05-19 13:43:27 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 13:43:27
+Path: /auth/login
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '48', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 13:43:28 - ERROR - 
+==================================================
+Error Info:
+Error Type: ValidationError
+Error Message: 1 validation error for TokenResponse
+expires_at
+  Field required [type=missing, input_value={'access_token': 'eyJhbGc...earer', 'scope': 'user'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+==================================================
+2025-05-19 13:45:45 - INFO - Database and tables initialized successfully
+2025-05-19 13:46:25 - INFO - Database and tables initialized successfully
+2025-05-19 13:46:28 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 13:46:28
+Path: /auth/login
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '48', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 13:46:29 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.42s
+==================================================
+2025-05-19 13:46:52 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 13:46:52
+Path: /user/upload-photo/
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '299277', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidXNlcm5hbWUiOiJsZWlsYSIsInNjb3BlcyI6WyJ1c2VyIl0sImV4cCI6MTc0NzY2Mzg5MX0.XWJoD8wKigwtjC75dMd0-P6cS4Hou73LLZ-N3yGKFc0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'multipart/form-data; boundary=----WebKitFormBoundaryAZThYmu8ehCAf4wF', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 13:46:52 - INFO - 
+==================================================
+Response Info:
+Status Code: 400
+Process Time: 0.24s
+==================================================
+2025-05-19 13:47:00 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 13:47:00
+Path: /user/upload-photo/
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '299277', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidXNlcm5hbWUiOiJsZWlsYSIsInNjb3BlcyI6WyJ1c2VyIl0sImV4cCI6MTc0NzY2Mzg5MX0.XWJoD8wKigwtjC75dMd0-P6cS4Hou73LLZ-N3yGKFc0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'multipart/form-data; boundary=----WebKitFormBoundaryQ93YJOeQtImBFWsZ', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 13:47:00 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.17s
+==================================================

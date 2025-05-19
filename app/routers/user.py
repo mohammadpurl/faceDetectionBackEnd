@@ -6,6 +6,8 @@ from datetime import datetime, UTC
 from app.services.auth import get_current_user
 from app.models.user import User
 from app.services.user_service import insert_user_photo_in_db
+import mediapipe as mp
+import numpy as np
 
 router = APIRouter()
 
@@ -16,10 +18,27 @@ def is_blurry(image_np, threshold=100):
     return laplacian_var < threshold
 
 
-def is_frontal_face(image_np):
-    # این تابع باید با استفاده از مدل‌های تشخیص چهره (مثلاً dlib یا mediapipe) پیاده‌سازی شود
-    # به طور ساده: اگر یک چهره پیدا شد و زاویه آن مناسب بود True برگرداند
-    return True  # پیاده‌سازی دقیق نیاز به کد بیشتر دارد
+def is_frontal_face(image_np, angle_threshold=20):
+    mp_face_mesh = mp.solutions.face_mesh
+    with mp_face_mesh.FaceMesh(static_image_mode=True) as face_mesh:
+        results = face_mesh.process(cv2.cvtColor(image_np, cv2.COLOR_BGR2RGB))
+        if not results.multi_face_landmarks:
+            return False  # هیچ چهره‌ای پیدا نشد
+
+        # فقط اولین چهره را بررسی می‌کنیم
+        face_landmarks = results.multi_face_landmarks[0]
+        # نقاط کلیدی چشم چپ و راست و بینی
+        left_eye = face_landmarks.landmark[33]
+        right_eye = face_landmarks.landmark[263]
+        nose_tip = face_landmarks.landmark[1]
+
+        # محاسبه زاویه بین چشم‌ها و بینی (ساده‌شده)
+        dx = right_eye.x - left_eye.x
+        dy = right_eye.y - left_eye.y
+        angle = np.degrees(np.arctan2(dy, dx))
+
+        # اگر زاویه خیلی زیاد نباشد، چهره تقریباً رو به دوربین است
+        return abs(angle) < angle_threshold
 
 
 @router.post("/upload-photo/")

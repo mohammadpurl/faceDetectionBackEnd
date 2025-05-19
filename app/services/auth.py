@@ -337,7 +337,7 @@ async def create_tokens(user: User) -> dict:
             "access_token": access_token,
             "refresh_token": refresh_token,
             "token_type": "bearer",
-            "scope": " ".join(scopes),  # اضافه کردن scopes به پاسخ
+            "expires_at": access_token_expires,
         }
     except Exception as e:
         print(f"Error creating tokens: {e}")
