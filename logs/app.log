@@ -342,3 +342,674 @@ Process Time: 0.02s
 2025-05-19 09:43:36 - INFO - Database and tables initialized successfully
 2025-05-19 09:44:04 - INFO - Database and tables initialized successfully
 2025-05-19 09:44:12 - INFO - Database and tables initialized successfully
+2025-05-19 09:47:48 - INFO - Database and tables initialized successfully
+2025-05-19 09:47:54 - INFO - Database and tables initialized successfully
+2025-05-19 09:54:00 - INFO - Database and tables initialized successfully
+2025-05-19 09:56:24 - INFO - Database and tables initialized successfully
+2025-05-19 09:56:40 - INFO - Database and tables initialized successfully
+2025-05-19 09:56:43 - INFO - Database and tables initialized successfully
+2025-05-19 10:13:28 - INFO - Database and tables initialized successfully
+2025-05-19 10:17:43 - INFO - Database and tables initialized successfully
+2025-05-19 10:17:48 - INFO - Database and tables initialized successfully
+2025-05-19 10:20:48 - INFO - Database and tables initialized successfully
+2025-05-19 10:23:24 - INFO - Database and tables initialized successfully
+2025-05-19 10:25:38 - INFO - Database and tables initialized successfully
+2025-05-19 10:31:52 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 10:31:52
+Path: /docs
+Method: GET
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'cache-control': 'max-age=0', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': '"Windows"', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 10:31:52 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.00s
+==================================================
+2025-05-19 10:31:52 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 10:31:52
+Path: /openapi.json
+Method: GET
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json,*/*', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 10:31:52 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.02s
+==================================================
+2025-05-19 10:32:56 - INFO - Database and tables initialized successfully
+2025-05-19 10:33:01 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 10:33:01
+Path: /docs
+Method: GET
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'cache-control': 'max-age=0', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': '"Windows"', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 10:33:01 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.00s
+==================================================
+2025-05-19 10:33:02 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 10:33:02
+Path: /openapi.json
+Method: GET
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json,*/*', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 10:33:02 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.02s
+==================================================
+2025-05-19 10:33:17 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 10:33:17
+Path: /user/upload-photo/
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '87884', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'multipart/form-data; boundary=----WebKitFormBoundaryzPXuE1PWXzuR3MLx', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 10:33:17 - INFO - 
+==================================================
+Response Info:
+Status Code: 401
+Process Time: 0.01s
+==================================================
+2025-05-19 10:38:40 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 10:38:40
+Path: /auth/login
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '50', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Basic Og==', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'x-requested-with': 'XMLHttpRequest', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json, text/plain, */*', 'content-type': 'application/x-www-form-urlencoded', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 10:38:40 - INFO - 
+==================================================
+Response Info:
+Status Code: 422
+Process Time: 0.01s
+==================================================
+2025-05-19 10:40:21 - INFO - Database and tables initialized successfully
+2025-05-19 10:40:26 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 10:40:26
+Path: /auth/login
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '50', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Basic Og==', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'x-requested-with': 'XMLHttpRequest', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json, text/plain, */*', 'content-type': 'application/x-www-form-urlencoded', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 10:40:26 - INFO - 
+==================================================
+Response Info:
+Status Code: 422
+Process Time: 0.01s
+==================================================
+2025-05-19 10:42:35 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 10:42:35
+Path: /auth/login
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '50', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Basic Og==', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'x-requested-with': 'XMLHttpRequest', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json, text/plain, */*', 'content-type': 'application/x-www-form-urlencoded', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 10:42:35 - INFO - 
+==================================================
+Response Info:
+Status Code: 422
+Process Time: 0.00s
+==================================================
+2025-05-19 10:46:35 - INFO - Database and tables initialized successfully
+2025-05-19 10:46:40 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 10:46:40
+Path: /docs
+Method: GET
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'cache-control': 'max-age=0', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': '"Windows"', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 10:46:40 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.01s
+==================================================
+2025-05-19 10:46:40 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 10:46:40
+Path: /openapi.json
+Method: GET
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json,*/*', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 10:46:40 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.01s
+==================================================
+2025-05-19 10:46:52 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 10:46:52
+Path: /auth/token
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '50', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Basic Og==', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'x-requested-with': 'XMLHttpRequest', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json, text/plain, */*', 'content-type': 'application/x-www-form-urlencoded', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 10:46:52 - ERROR - 
+==================================================
+Error Info:
+Error Type: InvalidRequestError
+Error Message: Mapper 'Mapper[User(users)]' has no property 'photos'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+==================================================
+2025-05-19 10:48:25 - INFO - Database and tables initialized successfully
+2025-05-19 10:48:36 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 10:48:36
+Path: /docs
+Method: GET
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'cache-control': 'max-age=0', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': '"Windows"', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 10:48:36 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.00s
+==================================================
+2025-05-19 10:48:36 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 10:48:36
+Path: /openapi.json
+Method: GET
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json,*/*', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 10:48:36 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.01s
+==================================================
+2025-05-19 10:48:52 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 10:48:52
+Path: /auth/register
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '49', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 10:48:52 - ERROR - 
+==================================================
+Error Info:
+Error Type: InvalidRequestError
+Error Message: Mapper 'Mapper[User(users)]' has no property 'photos'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+==================================================
+2025-05-19 10:50:12 - INFO - Database and tables initialized successfully
+2025-05-19 10:50:40 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 10:50:40
+Path: /auth/register
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '49', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 10:50:40 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.30s
+==================================================
+2025-05-19 10:50:53 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 10:50:53
+Path: /auth/token
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '50', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Basic Og==', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'x-requested-with': 'XMLHttpRequest', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json, text/plain, */*', 'content-type': 'application/x-www-form-urlencoded', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 10:50:53 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.01s
+==================================================
+2025-05-19 10:52:17 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 10:52:17
+Path: /auth/login
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '49', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 10:52:17 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.26s
+==================================================
+2025-05-19 10:52:37 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 10:52:37
+Path: /user/upload-photo/
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '87884', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxlaWxhIiwiZXhwIjoxNzUwNjM5MjUzfQ.oGr9gNqtGd4J0KTtWNqyiuWRY51hSd9baZFWUt4sE-M', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'multipart/form-data; boundary=----WebKitFormBoundarylDOw7Op4fiqDhgxa', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 10:52:37 - INFO - 
+==================================================
+Response Info:
+Status Code: 401
+Process Time: 0.01s
+==================================================
+2025-05-19 10:55:34 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 10:55:34
+Path: /auth/token
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '50', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Basic Og==', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'x-requested-with': 'XMLHttpRequest', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json, text/plain, */*', 'content-type': 'application/x-www-form-urlencoded', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 10:55:34 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.01s
+==================================================
+2025-05-19 10:55:39 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 10:55:39
+Path: /user/upload-photo/
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '87884', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxlaWxhIiwiZXhwIjoxNzUwNjM5NTM0fQ.4BmXoXtFokNtMcqWVYCMVhTnfmo-AqGdC4nO48cIves', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'multipart/form-data; boundary=----WebKitFormBoundaryaeNLPj19YhLbpwgp', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 10:55:39 - INFO - 
+==================================================
+Response Info:
+Status Code: 401
+Process Time: 0.01s
+==================================================
+2025-05-19 11:00:30 - INFO - Database and tables initialized successfully
+2025-05-19 11:00:35 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 11:00:35
+Path: /user/upload-photo/
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '87884', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxlaWxhIiwiZXhwIjoxNzUwNjM5NTM0fQ.4BmXoXtFokNtMcqWVYCMVhTnfmo-AqGdC4nO48cIves', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'multipart/form-data; boundary=----WebKitFormBoundaryOHHMvgJoj2lA1oW7', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 11:00:35 - INFO - 
+==================================================
+Response Info:
+Status Code: 401
+Process Time: 0.01s
+==================================================
+2025-05-19 11:01:27 - INFO - Database and tables initialized successfully
+2025-05-19 11:01:33 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 11:01:33
+Path: /user/upload-photo/
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '87884', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxlaWxhIiwiZXhwIjoxNzUwNjM5NTM0fQ.4BmXoXtFokNtMcqWVYCMVhTnfmo-AqGdC4nO48cIves', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'multipart/form-data; boundary=----WebKitFormBoundaryhq1MCP2y6JspPh6i', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 11:01:33 - INFO - 
+==================================================
+Response Info:
+Status Code: 401
+Process Time: 0.01s
+==================================================
+2025-05-19 11:02:55 - INFO - Database and tables initialized successfully
+2025-05-19 11:03:59 - INFO - Database and tables initialized successfully
+2025-05-19 11:04:34 - INFO - Database and tables initialized successfully
+2025-05-19 11:05:53 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 11:05:53
+Path: /user/upload-photo/
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '87884', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxlaWxhIiwiZXhwIjoxNzUwNjM5NTM0fQ.4BmXoXtFokNtMcqWVYCMVhTnfmo-AqGdC4nO48cIves', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'multipart/form-data; boundary=----WebKitFormBoundaryjGFRLI6RBGFREZ9e', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 11:05:53 - INFO - 
+==================================================
+Response Info:
+Status Code: 401
+Process Time: 0.01s
+==================================================
+2025-05-19 11:10:43 - INFO - Database and tables initialized successfully
+2025-05-19 11:10:49 - INFO - Database and tables initialized successfully
+2025-05-19 11:11:14 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 11:11:14
+Path: /auth/token
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '50', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Basic Og==', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'x-requested-with': 'XMLHttpRequest', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json, text/plain, */*', 'content-type': 'application/x-www-form-urlencoded', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 11:11:14 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.02s
+==================================================
+2025-05-19 11:11:23 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 11:11:23
+Path: /user/upload-photo/
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '87884', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxlaWxhIiwiZXhwIjoxNzUwNjQwNDc0fQ.8H-geWzDKnpk5isxBZP3W0WwRAg7Y0O2W0fUaoC9zVc', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'multipart/form-data; boundary=----WebKitFormBoundarylmaVdIThvGcE9NZN', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 11:11:23 - INFO - 
+==================================================
+Response Info:
+Status Code: 401
+Process Time: 0.01s
+==================================================
+2025-05-19 11:15:36 - INFO - Database and tables initialized successfully
+2025-05-19 11:15:59 - INFO - Database and tables initialized successfully
+2025-05-19 11:16:14 - INFO - Database and tables initialized successfully
+2025-05-19 11:16:23 - INFO - Database and tables initialized successfully
+2025-05-19 11:16:39 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 11:16:39
+Path: /user/upload-photo/
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '87884', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxlaWxhIiwiZXhwIjoxNzUwNjQwNDc0fQ.8H-geWzDKnpk5isxBZP3W0WwRAg7Y0O2W0fUaoC9zVc', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'multipart/form-data; boundary=----WebKitFormBoundaryOBdjofi6fR6StZDE', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 11:16:39 - INFO - 
+==================================================
+Response Info:
+Status Code: 401
+Process Time: 0.01s
+==================================================
+2025-05-19 11:17:21 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 11:17:21
+Path: /user/upload-photo/
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '240482', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxlaWxhIiwiZXhwIjoxNzUwNjQwNDc0fQ.8H-geWzDKnpk5isxBZP3W0WwRAg7Y0O2W0fUaoC9zVc', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'multipart/form-data; boundary=----WebKitFormBoundaryXjVb0aoFMqtKQeJV', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 11:17:21 - INFO - 
+==================================================
+Response Info:
+Status Code: 401
+Process Time: 0.02s
+==================================================
+2025-05-19 11:23:37 - INFO - Database and tables initialized successfully
+2025-05-19 11:25:29 - INFO - Database and tables initialized successfully
+2025-05-19 11:25:43 - INFO - Database and tables initialized successfully
+2025-05-19 11:26:14 - INFO - Database and tables initialized successfully
+2025-05-19 11:38:37 - INFO - Database and tables initialized successfully
+2025-05-19 11:44:05 - INFO - Database and tables initialized successfully
+2025-05-19 11:44:59 - INFO - Database and tables initialized successfully
+2025-05-19 11:45:55 - INFO - Database and tables initialized successfully
+2025-05-19 11:52:04 - INFO - Database and tables initialized successfully
+2025-05-19 11:54:42 - INFO - Database and tables initialized successfully
+2025-05-19 11:55:32 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 11:55:32
+Path: /auth/token
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '50', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Basic Og==', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'x-requested-with': 'XMLHttpRequest', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json, text/plain, */*', 'content-type': 'application/x-www-form-urlencoded', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 11:55:32 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.02s
+==================================================
+2025-05-19 11:55:37 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 11:55:37
+Path: /user/upload-photo/
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '240482', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxlaWxhIiwiZXhwIjoxNzUwNjU1NzMyfQ._QA213paRkDKen71C3nub4nnx2-kwRjACuD9aNgneLg', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'multipart/form-data; boundary=----WebKitFormBoundaryVCM5WW2jpneJuO9O', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 11:55:37 - INFO - 
+==================================================
+Response Info:
+Status Code: 401
+Process Time: 0.01s
+==================================================
+2025-05-19 12:17:57 - INFO - Database and tables initialized successfully
+2025-05-19 12:19:19 - INFO - Database and tables initialized successfully
+2025-05-19 12:19:21 - INFO - Database and tables initialized successfully
+2025-05-19 12:19:24 - INFO - Database and tables initialized successfully
+2025-05-19 12:19:27 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 12:19:27
+Path: /docs
+Method: GET
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'cache-control': 'max-age=0', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': '"Windows"', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 12:19:27 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.00s
+==================================================
+2025-05-19 12:19:28 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 12:19:28
+Path: /openapi.json
+Method: GET
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json,*/*', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 12:19:28 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.01s
+==================================================
+2025-05-19 12:19:38 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 12:19:38
+Path: /auth/token
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '50', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Basic Og==', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'x-requested-with': 'XMLHttpRequest', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json, text/plain, */*', 'content-type': 'application/x-www-form-urlencoded', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 12:19:38 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.02s
+==================================================
+2025-05-19 12:19:51 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 12:19:51
+Path: /user/upload-photo/
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '87884', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxlaWxhIiwiZXhwIjoxNzUwNjU3MTc4fQ.OrtiZP5evE2VGpPLo6q_RXVP-h6w_s9PkBC4OG9KIlM', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'multipart/form-data; boundary=----WebKitFormBoundaryS3YplxoKTnwjaBBy', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 12:19:51 - INFO - 
+==================================================
+Response Info:
+Status Code: 401
+Process Time: 0.01s
+==================================================
+2025-05-19 12:23:12 - INFO - Database and tables initialized successfully
+2025-05-19 12:23:48 - INFO - Database and tables initialized successfully
+2025-05-19 12:24:04 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 12:24:04
+Path: /auth/token
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '50', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Basic Og==', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'sec-ch-ua-mobile': '?0', 'x-requested-with': 'XMLHttpRequest', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json, text/plain, */*', 'content-type': 'application/x-www-form-urlencoded', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 12:24:04 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.02s
+==================================================
+2025-05-19 12:24:08 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 12:24:08
+Path: /user/upload-photo/
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '87884', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidXNlcm5hbWUiOiJsZWlsYSIsInNjb3BlcyI6WyJ1c2VyIl0sImV4cCI6MTc0NzY1OTI0NH0.M8CXPc-9j09ttUsiC2CaCfum7yzpKpmR4Lh96u1mPTE', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'multipart/form-data; boundary=----WebKitFormBoundary4VMEsJGi1QDrU2po', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 12:24:08 - ERROR - 
+==================================================
+Error Info:
+Error Type: AttributeError
+Error Message: 'str' object has no attribute 'get'
+==================================================
+2025-05-19 12:33:30 - INFO - Database and tables initialized successfully
+2025-05-19 12:33:35 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 12:33:35
+Path: /user/upload-photo/
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '87884', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidXNlcm5hbWUiOiJsZWlsYSIsInNjb3BlcyI6WyJ1c2VyIl0sImV4cCI6MTc0NzY1OTI0NH0.M8CXPc-9j09ttUsiC2CaCfum7yzpKpmR4Lh96u1mPTE', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'multipart/form-data; boundary=----WebKitFormBoundaryLM6X2s3lBHL2hks2', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 12:33:35 - ERROR - 
+==================================================
+Error Info:
+Error Type: AttributeError
+Error Message: 'str' object has no attribute 'get'
+==================================================
+2025-05-19 12:33:58 - INFO - Database and tables initialized successfully
+2025-05-19 12:33:59 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 12:33:59
+Path: /user/upload-photo/
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '87884', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidXNlcm5hbWUiOiJsZWlsYSIsInNjb3BlcyI6WyJ1c2VyIl0sImV4cCI6MTc0NzY1OTI0NH0.M8CXPc-9j09ttUsiC2CaCfum7yzpKpmR4Lh96u1mPTE', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'multipart/form-data; boundary=----WebKitFormBoundary3IxkivUrqKAMtl0H', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 12:33:59 - ERROR - 
+==================================================
+Error Info:
+Error Type: TypeError
+Error Message: get_user_by_id() missing 1 required positional argument: 'db'
+==================================================
+2025-05-19 12:36:33 - INFO - Database and tables initialized successfully
+2025-05-19 12:36:38 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 12:36:38
+Path: /user/upload-photo/
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '87884', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidXNlcm5hbWUiOiJsZWlsYSIsInNjb3BlcyI6WyJ1c2VyIl0sImV4cCI6MTc0NzY1OTI0NH0.M8CXPc-9j09ttUsiC2CaCfum7yzpKpmR4Lh96u1mPTE', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'multipart/form-data; boundary=----WebKitFormBoundaryNtBB92vooJ7x7l0T', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 12:36:38 - INFO - 
+==================================================
+Response Info:
+Status Code: 500
+Process Time: 0.01s
+==================================================
+2025-05-19 12:36:58 - INFO - Database and tables initialized successfully
+2025-05-19 12:37:48 - INFO - Database and tables initialized successfully
+2025-05-19 12:37:48 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 12:37:48
+Path: /user/upload-photo/
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '87884', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidXNlcm5hbWUiOiJsZWlsYSIsInNjb3BlcyI6WyJ1c2VyIl0sImV4cCI6MTc0NzY1OTI0NH0.M8CXPc-9j09ttUsiC2CaCfum7yzpKpmR4Lh96u1mPTE', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'multipart/form-data; boundary=----WebKitFormBoundarypiVnazyIaQYRfAYA', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 12:37:48 - ERROR - 
+==================================================
+Error Info:
+Error Type: TypeError
+Error Message: get_user_by_id() missing 1 required positional argument: 'db'
+==================================================
+2025-05-19 12:38:00 - INFO - Database and tables initialized successfully
+2025-05-19 12:38:00 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 12:38:00
+Path: /user/upload-photo/
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '87884', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidXNlcm5hbWUiOiJsZWlsYSIsInNjb3BlcyI6WyJ1c2VyIl0sImV4cCI6MTc0NzY1OTI0NH0.M8CXPc-9j09ttUsiC2CaCfum7yzpKpmR4Lh96u1mPTE', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'multipart/form-data; boundary=----WebKitFormBoundaryEPFXPFE8KZt1dpfB', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 12:38:00 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.05s
+==================================================
+2025-05-19 12:48:41 - INFO - Database and tables initialized successfully
+2025-05-19 12:49:13 - INFO - Database and tables initialized successfully
+2025-05-19 13:01:34 - INFO - Database and tables initialized successfully
+2025-05-19 13:02:06 - INFO - Database and tables initialized successfully
+2025-05-19 13:09:51 - INFO - Database and tables initialized successfully
+2025-05-19 13:10:33 - INFO - Database and tables initialized successfully
+2025-05-19 13:10:58 - INFO - 
+==================================================
+Request Info:
+Time: 2025-05-19 13:10:58
+Path: /user/upload-photo/
+Method: POST
+Client IP: 127.0.0.1
+Headers: {'host': 'localhost:4000', 'connection': 'keep-alive', 'content-length': '87884', 'sec-ch-ua-platform': '"Windows"', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidXNlcm5hbWUiOiJsZWlsYSIsInNjb3BlcyI6WyJ1c2VyIl0sImV4cCI6MTc0NzY1OTI0NH0.M8CXPc-9j09ttUsiC2CaCfum7yzpKpmR4Lh96u1mPTE', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"', 'content-type': 'multipart/form-data; boundary=----WebKitFormBoundaryMkNw4dXDQk8NBAuO', 'sec-ch-ua-mobile': '?0', 'origin': 'http://localhost:4000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:4000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-GB,en;q=0.9,fa-IR;q=0.8,fa;q=0.7,en-US;q=0.6'}
+==================================================
+2025-05-19 13:10:58 - INFO - 
+==================================================
+Response Info:
+Status Code: 200
+Process Time: 0.06s
+==================================================

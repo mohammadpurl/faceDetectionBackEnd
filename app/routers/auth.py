@@ -12,7 +12,7 @@ from app.services.auth import (
     get_user_by_mobile,
     create_user,
     authenticate_user,
-    create_user_tokens,
+    create_tokens,
 )
 from sqlalchemy.future import select
 from datetime import timedelta, datetime
@@ -35,11 +35,13 @@ async def login_token(form_data: OAuth2PasswordRequestForm = Depends()):
     user = await get_user_by_username(form_data.username)
     if not user:
         raise HTTPException(status_code=401, detail="Invalid credentials")
+    settings = get_settings()
+    scopes = ["user"]  # همه کاربران به اطلاعات پایه دسترسی دارند
 
     access_token = create_access_token(
-        data={"username": user.username},
-        settings=get_settings(),
-        expires_delta=timedelta(minutes=50000),
+        data={"sub": str(user.id), "username": user.username, "scopes": scopes},
+        settings=settings,
+        expires_delta=timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES),
     )
 
     return {
@@ -100,12 +102,12 @@ async def login(
             headers={"WWW-Authenticate": "Bearer"},
         )
 
-    tokens = await create_user_tokens(user, settings)
+    tokens = await create_tokens(user)
     await update_user_tokens_in_db(
         user, tokens.access_token, tokens.refresh_token, tokens.expires_at
     )
 
-    return tokens
+    return TokenResponse(**tokens)
 
 
 @router.get("/me", response_model=UserResponse)

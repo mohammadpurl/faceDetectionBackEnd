@@ -1,9 +1,12 @@
 from app.models.user import User
+from app.models.user import UserPhoto
 from app.db.session import get_db
 import sqlalchemy as sa
 from fastapi import HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
 from typing import List, Dict, Any
+from pathlib import Path
+from datetime import datetime
 
 
 async def count_users() -> int:
@@ -54,13 +57,14 @@ async def get_all_users() -> List[Dict[str, Any]]:
         raise HTTPException(status_code=500, detail=f"Failed to list users: {str(e)}")
 
 
-async def get_user_by_id(user_id: int, db: AsyncSession) -> User:
+async def get_user_by_id(user_id: int) -> User:
     """
     اطلاعات یک کاربر را بر اساس آیدی بازگرداند
     """
     try:
-        result = await db.execute(sa.select(User).where(User.id == user_id))
-        user = result.scalars().first()
+        async with get_db() as session:
+            result = await session.execute(sa.select(User).where(User.id == user_id))
+            user = result.scalars().first()
 
         if not user:
             raise HTTPException(
@@ -165,3 +169,15 @@ async def get_user_with_tokens(user_id: int) -> Dict[str, Any]:
         raise HTTPException(
             status_code=500, detail=f"Failed to get user with tokens: {str(e)}"
         )
+
+
+async def insert_user_photo_in_db(user_id: int, photo_path: str) -> bool:
+    try:
+        async with get_db() as session:
+            new_photo = UserPhoto(user_id=user_id, image_path=photo_path)
+            session.add(new_photo)
+            await session.commit()
+            return True
+    except Exception as e:
+        print(f"Error inserting user photo in database: {e}")
+        return False

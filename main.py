@@ -1,7 +1,7 @@
 from typing_extensions import Annotated
 from fastapi import Depends, FastAPI
 from app.config import Settings, get_settings
-from app.routers import auth
+from app.routers import auth, user
 from app.db.session import engine, Base, init_db
 import os
 import logging
@@ -120,4 +120,4 @@ async def startup_event():
 
 # ثبت روترها
 app.include_router(auth.router, prefix="/auth", tags=["authentication"])
-# app.include_router(user.router, prefix="/user", tags=["User"])
+app.include_router(user.router, prefix="/user", tags=["User"])

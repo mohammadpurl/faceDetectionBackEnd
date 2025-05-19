@@ -29,14 +29,15 @@ from typing_extensions import Annotated
 from datetime import datetime, timedelta
 import logging
 from app.services.user_service import get_user_by_id
+from app.utils.security import create_access_token, create_refresh_token
 
 logger = logging.getLogger(__name__)
 
 # OAuth2PasswordBearer for token extraction
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/login", auto_error=True)
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/token", auto_error=False)
 
 # Optional OAuth2 scheme for endpoints that can work with or without authentication
-optional_oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/login", auto_error=False)
+optional_oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/token", auto_error=False)
 
 
 async def handle_verify_code(mobile: str, code: int) -> str:
@@ -91,6 +92,8 @@ async def refresh_access_token(
         return TokenResponse(
             access_token=new_access_token,
             refresh_token=refresh_token,
+            token_type="bearer",
+            expires_at=user.token_expires_at,
         )
     except ExpiredSignatureError:
         raise HTTPException(status_code=401, detail="Refresh token expired")
@@ -121,18 +124,22 @@ async def get_current_user(
         headers={"WWW-Authenticate": "Bearer"},
     )
     try:
+        print(f"token: {token}")
+        print(f"settings.SECRET_KEY: {settings.SECRET_KEY}")
+        print(f"settings.ALGORITHM: {settings.ALGORITHM}")
         payload = jwt.decode(
             token, settings.SECRET_KEY, algorithms=[settings.ALGORITHM]
         )
         sub = payload.get("sub")
+        print(f"sub: {sub}")
         if not sub:
             logger.warning("Token is missing user_id")
             raise credentials_exception
-        user_id = int(sub)
+        user_Id = int(sub)
         # بررسی انقضای توکن
         exp = payload.get("exp")
         if exp and datetime.utcnow() > datetime.fromtimestamp(exp):
-            logger.warning(f"Token expired for user {user_id}")
+            logger.warning(f"Token expired for user_Id {user_Id}")
             raise credentials_exception
 
     except JWTError as e:
@@ -140,59 +147,59 @@ async def get_current_user(
         raise credentials_exception
 
     # بررسی وجود کاربر در پایگاه داده
-    user = await get_user_by_id(user_id, db)
+    user = await get_user_by_id(user_Id)
     if user is None:
-        logger.warning(f"User ID {user_id} from token not found in database")
+        logger.warning(f"User ID {user_Id} from token not found in database")
         raise credentials_exception
 
-    return user_id
+    return user
 
 
-async def get_optional_user(
-    token: Optional[str] = Depends(optional_oauth2_scheme),
-    db: AsyncSession = Depends(get_db),
-    settings: Settings = Depends(get_settings),
-) -> Optional[int]:
-    """
-    بررسی اختیاری احراز هویت کاربر.
-    این تابع برای API‌هایی استفاده می‌شود که می‌توانند هم برای کاربران احراز هویت شده
-    و هم برای کاربران مهمان کار کنند.
+# async def get_optional_user(
+#     token: Optional[str] = Depends(optional_oauth2_scheme),
+#     db: AsyncSession = Depends(get_db),
+#     settings: Settings = Depends(get_settings),
+# ) -> Optional[int]:
+#     """
+#     بررسی اختیاری احراز هویت کاربر.
+#     این تابع برای API‌هایی استفاده می‌شود که می‌توانند هم برای کاربران احراز هویت شده
+#     و هم برای کاربران مهمان کار کنند.
 
-    در صورت وجود توکن معتبر، شناسه کاربر را برمی‌گرداند، در غیر این صورت None را بر می‌گرداند.
-    """
-    if not token:
-        logger.info("No authentication token provided for optional auth endpoint")
-        return None
+#     در صورت وجود توکن معتبر، شناسه کاربر را برمی‌گرداند، در غیر این صورت None را بر می‌گرداند.
+#     """
+#     if not token:
+#         logger.info("No authentication token provided for optional auth endpoint")
+#         return None
 
-    try:
-        payload = jwt.decode(
-            token, settings.SECRET_KEY, algorithms=[settings.ALGORITHM]
-        )
-        sub = payload.get("sub")
-        if not sub:
-            logger.warning("Optional token is present but missing user_id")
-            return None
-        user_id = int(sub)
-        # بررسی انقضای توکن
-        exp = payload.get("exp")
-        if exp and datetime.utcnow() > datetime.fromtimestamp(exp):
-            logger.warning(f"Optional token expired for user {user_id}")
-            return None
+#     try:
+#         payload = jwt.decode(
+#             token, settings.SECRET_KEY, algorithms=[settings.ALGORITHM]
+#         )
+#         sub = payload.get("sub")
+#         if not sub:
+#             logger.warning("Optional token is present but missing user_id")
+#             return None
+#         user_id = int(sub)
+#         # بررسی انقضای توکن
+#         exp = payload.get("exp")
+#         if exp and datetime.utcnow() > datetime.fromtimestamp(exp):
+#             logger.warning(f"Optional token expired for user {user_id}")
+#             return None
 
-        # بررسی وجود کاربر در پایگاه داده
-        user = await get_user_by_id(user_id, db)
-        if user is None:
-            logger.warning(
-                f"User ID {user_id} from optional token not found in database"
-            )
-            return None
+#         # بررسی وجود کاربر در پایگاه داده
+#         user = await get_user_by_id(user_id, db)
+#         if user is None:
+#             logger.warning(
+#                 f"User ID {user_id} from optional token not found in database"
+#             )
+#             return None
 
-        logger.info(f"Optional auth successful for user {user_id}")
-        return user_id
+#         logger.info(f"Optional auth successful for user {user_id}")
+#         return user_id
 
-    except JWTError as e:
-        logger.warning(f"JWT Error in optional auth: {str(e)}")
-        return None
+#     except JWTError as e:
+#         logger.warning(f"JWT Error in optional auth: {str(e)}")
+#         return None
 
 
 async def create_user(user_data: UserCreate, db: AsyncSession) -> User:
@@ -253,30 +260,88 @@ async def get_user_by_username(username: str) -> Optional[User]:
         return user
 
 
-async def create_user_tokens(user: User, settings: Settings) -> TokenResponse:
-    """Create access and refresh tokens for user"""
-    access_token = create_access_token(
-        data={"sub": str(user.id), "username": user.username},
-        settings=settings,
-        expires_delta=timedelta(minutes=30),
-    )
+# async def create_user_tokens(user: User, settings: Settings) -> TokenResponse:
+#     """Create access and refresh tokens for user"""
+#     access_token = create_access_token(
+#         data={"sub": {"id": user.id, "username": user.username}},
+#         settings=settings,
+#         expires_delta=timedelta(minutes=30),
+#     )
 
-    refresh_token = create_refresh_token(
-        data={"sub": str(user.id)},
-        settings=settings,
-    )
+#     refresh_token = create_refresh_token(
+#         data={"sub": str(user.id)},
+#         settings=settings,
+#     )
 
-    # Update user's tokens in database
-    user.access_token = access_token
-    user.refresh_token = refresh_token
-    user.token_expires_at = datetime.utcnow() + timedelta(minutes=30)
+#     # Update user's tokens in database
+#     user.access_token = access_token
+#     user.refresh_token = refresh_token
+#     user.token_expires_at = datetime.utcnow() + timedelta(minutes=30)
 
-    return TokenResponse(
-        access_token=access_token,
-        refresh_token=refresh_token,
-        token_type="bearer",
-        expires_at=user.token_expires_at,
-    )
+#     return TokenResponse(
+#         access_token=access_token,
+#         refresh_token=refresh_token,
+#         token_type="bearer",
+#         expires_at=user.token_expires_at,
+#     )
+
+
+async def create_tokens(user: User) -> dict:
+    try:
+        print(f"Creating tokens for user ID: {user.id}, mobile: {user.mobile}")
+        settings = get_settings()
+
+        # Calculate token expiration
+        access_token_expires = datetime.now() + timedelta(
+            minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES
+        )
+        refresh_token_expires = datetime.now() + timedelta(days=7)
+
+        # Define default scopes for user
+        scopes = ["user"]  # همه کاربران به اطلاعات پایه دسترسی دارند
+
+        # اضافه کردن دسترسی‌های دیگر بر اساس نوع کاربر
+        if getattr(user, "is_admin", False):
+            scopes.extend(["products", "categories", "warehouses"])
+        elif getattr(user, "is_supplier", False):
+            scopes.extend(["products", "warehouses"])
+
+        # Create tokens with scopes
+        access_token = create_access_token(
+            data={"sub": str(user.id), "username": user.username, "scopes": scopes},
+            settings=settings,
+            expires_delta=timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES),
+        )
+
+        refresh_token = create_refresh_token(
+            data={"sub": str(user.id), "username": user.mobile, "username": scopes},
+            settings=settings,
+            expires_delta=None,
+        )
+
+        # Store tokens in the database
+        print(f"Storing tokens in database for user ID: {user.id}")
+        token_updated = await update_user_tokens_in_db(
+            username=user.username,
+            access_token=access_token,
+            refresh_token=refresh_token,
+            token_expires_at=access_token_expires,
+        )
+
+        if not token_updated:
+            print(f"Warning: Failed to update tokens for user ID: {user.id}")
+        else:
+            print(f"Tokens created and stored successfully for user ID: {user.id}")
+
+        return {
+            "access_token": access_token,
+            "refresh_token": refresh_token,
+            "token_type": "bearer",
+            "scope": " ".join(scopes),  # اضافه کردن scopes به پاسخ
+        }
+    except Exception as e:
+        print(f"Error creating tokens: {e}")
+        raise
 
 
 async def update_user_tokens_in_db(

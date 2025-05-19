@@ -34,14 +34,28 @@ def create_access_token(
     """Create JWT access token"""
     to_encode = data.copy()
     if expires_delta:
-        expire = datetime.utcnow() + expires_delta
+        expire = datetime.now() + (expires_delta or timedelta(minutes=15))
     else:
-        expire = datetime.utcnow() + timedelta(minutes=15)
+        expire = datetime.now() + (expires_delta or timedelta(minutes=15))
     to_encode.update({"exp": expire})
     encoded_jwt = jwt.encode(
         to_encode, settings.SECRET_KEY, algorithm=settings.ALGORITHM
     )
     return encoded_jwt
+
+
+# def create_access_token(
+#     data: dict,
+#     settings: Settings,
+#     expires_delta: timedelta | None = None,
+# ) -> str:
+#     to_encode = data.copy()
+#     expire = datetime.now() + (expires_delta or timedelta(minutes=50000))
+#     to_encode.update({"exp": expire})
+#     encoded_jwt = jwt.encode(
+#         to_encode, settings.SECRET_KEY, algorithm=settings.ALGORITHM
+#     )
+#     return encoded_jwt
 
 
 def decode_access_token(token: str, settings):
@@ -59,10 +73,11 @@ def decode_access_token(token: str, settings):
 def create_refresh_token(
     data: dict,
     settings: Annotated[Settings, Depends(get_settings)],
+    expires_delta: Optional[timedelta] = None,
 ) -> str:
     """Create JWT refresh token"""
     to_encode = data.copy()
-    expire = datetime.utcnow() + timedelta(days=7)
+    expire = datetime.now() + (expires_delta or timedelta(days=7))
     to_encode.update({"exp": expire})
     encoded_jwt = jwt.encode(
         to_encode, settings.SECRET_KEY, algorithm=settings.ALGORITHM

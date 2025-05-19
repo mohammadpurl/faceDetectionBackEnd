@@ -1,6 +1,6 @@
 from datetime import datetime
-from sqlalchemy import Column, DateTime, Integer, String, Boolean, Text
-from sqlalchemy.orm import Mapped, mapped_column
+from sqlalchemy import Column, DateTime, Integer, String, Boolean, Text, ForeignKey
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.db.session import Base
 from sqlalchemy.sql import func
 
@@ -30,3 +30,15 @@ class User(Base):
     updated_at: Mapped[DateTime | None] = mapped_column(
         DateTime(timezone=True), onupdate=func.now(), nullable=True
     )
+    photos: Mapped[list["UserPhoto"]] = relationship(
+        back_populates="user", cascade="all, delete-orphan"
+    )
+
+
+class UserPhoto(Base):
+    __tablename__ = "user_photos"
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"))
+    image_path = Column(String, nullable=False)
+    created_at = Column(DateTime, default=datetime.utcnow)
+    user = relationship("User", back_populates="photos")
