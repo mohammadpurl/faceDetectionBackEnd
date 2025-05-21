@@ -113,7 +113,7 @@ async def get_current_user(
     token: str = Depends(oauth2_scheme),
     db: AsyncSession = Depends(get_db),
     settings: Settings = Depends(get_settings),
-) -> int:
+) -> User:
     """
     احراز هویت کاربر از طریق توکن JWT و بازگرداندن شناسه کاربر.
     این تابع برای API‌هایی استفاده می‌شود که نیاز به احراز هویت اجباری دارند.
@@ -123,83 +123,47 @@ async def get_current_user(
         detail="اعتبار نشست شما منقضی شده است. لطفا دوباره وارد شوید.",
         headers={"WWW-Authenticate": "Bearer"},
     )
+
+    if not token:
+        logger.warning("No token provided in request")
+        raise credentials_exception
+
     try:
-        print(f"token: {token}")
-        print(f"settings.SECRET_KEY: {settings.SECRET_KEY}")
-        print(f"settings.ALGORITHM: {settings.ALGORITHM}")
+        # Remove 'Bearer ' prefix if present
+        if token.startswith("Bearer "):
+            token = token.split(" ")[1]
+
         payload = jwt.decode(
             token, settings.SECRET_KEY, algorithms=[settings.ALGORITHM]
         )
         sub = payload.get("sub")
-        print(f"sub: {sub}")
+
         if not sub:
             logger.warning("Token is missing user_id")
             raise credentials_exception
-        user_Id = int(sub)
-        # بررسی انقضای توکن
+
+        user_id = int(sub)
+
+        # Check token expiration
         exp = payload.get("exp")
-        if exp and datetime.utcnow() > datetime.fromtimestamp(exp):
-            logger.warning(f"Token expired for user_Id {user_Id}")
+        if exp and datetime.now() > datetime.fromtimestamp(exp):
+            logger.warning(f"Token expired for user_id {user_id}")
             raise credentials_exception
 
     except JWTError as e:
         logger.warning(f"JWT Error: {str(e)}")
         raise credentials_exception
+    except ValueError as e:
+        logger.warning(f"Invalid token format: {str(e)}")
+        raise credentials_exception
 
-    # بررسی وجود کاربر در پایگاه داده
-    user = await get_user_by_id(user_Id)
+    # Check if user exists in database
+    user = await get_user_by_id(user_id)
     if user is None:
-        logger.warning(f"User ID {user_Id} from token not found in database")
+        logger.warning(f"User ID {user_id} from token not found in database")
         raise credentials_exception
 
     return user
-
-
-# async def get_optional_user(
-#     token: Optional[str] = Depends(optional_oauth2_scheme),
-#     db: AsyncSession = Depends(get_db),
-#     settings: Settings = Depends(get_settings),
-# ) -> Optional[int]:
-#     """
-#     بررسی اختیاری احراز هویت کاربر.
-#     این تابع برای API‌هایی استفاده می‌شود که می‌توانند هم برای کاربران احراز هویت شده
-#     و هم برای کاربران مهمان کار کنند.
-
-#     در صورت وجود توکن معتبر، شناسه کاربر را برمی‌گرداند، در غیر این صورت None را بر می‌گرداند.
-#     """
-#     if not token:
-#         logger.info("No authentication token provided for optional auth endpoint")
-#         return None
-
-#     try:
-#         payload = jwt.decode(
-#             token, settings.SECRET_KEY, algorithms=[settings.ALGORITHM]
-#         )
-#         sub = payload.get("sub")
-#         if not sub:
-#             logger.warning("Optional token is present but missing user_id")
-#             return None
-#         user_id = int(sub)
-#         # بررسی انقضای توکن
-#         exp = payload.get("exp")
-#         if exp and datetime.utcnow() > datetime.fromtimestamp(exp):
-#             logger.warning(f"Optional token expired for user {user_id}")
-#             return None
-
-#         # بررسی وجود کاربر در پایگاه داده
-#         user = await get_user_by_id(user_id, db)
-#         if user is None:
-#             logger.warning(
-#                 f"User ID {user_id} from optional token not found in database"
-#             )
-#             return None
-
-#         logger.info(f"Optional auth successful for user {user_id}")
-#         return user_id
-
-#     except JWTError as e:
-#         logger.warning(f"JWT Error in optional auth: {str(e)}")
-#         return None
 
 
 async def create_user(user_data: UserCreate, db: AsyncSession) -> User:
@@ -258,32 +222,6 @@ async def get_user_by_username(username: str) -> Optional[User]:
         result = await session.execute(sa.select(User).where(User.username == username))
         user = result.scalars().first()
         return user
-
-
-# async def create_user_tokens(user: User, settings: Settings) -> TokenResponse:
-#     """Create access and refresh tokens for user"""
-#     access_token = create_access_token(
-#         data={"sub": {"id": user.id, "username": user.username}},
-#         settings=settings,
-#         expires_delta=timedelta(minutes=30),
-#     )
-
-#     refresh_token = create_refresh_token(
-#         data={"sub": str(user.id)},
-#         settings=settings,
-#     )
-
-#     # Update user's tokens in database
-#     user.access_token = access_token
-#     user.refresh_token = refresh_token
-#     user.token_expires_at = datetime.utcnow() + timedelta(minutes=30)
-
-#     return TokenResponse(
-#         access_token=access_token,
-#         refresh_token=refresh_token,
-#         token_type="bearer",
-#         expires_at=user.token_expires_at,
-#     )
 
 
 async def create_tokens(user: User) -> dict:

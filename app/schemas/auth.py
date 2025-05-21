@@ -8,12 +8,7 @@ class RegisterRequest(BaseModel):
     email: str
     firstname: str
     lastname: str
-    strava_id: int
-    strava_access_token: str
-    strava_refresh_token: str
-    strava_token_expires_at: Optional[int] = None
-    # user_type: UserType = UserType.ATHLETE
-    # password: str
+    password: str
 
 
 class TokenResponse(BaseModel):

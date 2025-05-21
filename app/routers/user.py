@@ -2,7 +2,7 @@ from fastapi import APIRouter, UploadFile, File, HTTPException, Depends
 from pathlib import Path
 import cv2
 import numpy as np
-from datetime import datetime, UTC
+from datetime import datetime
 from app.services.auth import get_current_user
 from app.models.user import User
 from app.services.user_service import insert_user_photo_in_db
@@ -65,7 +65,7 @@ async def upload_photo(
     # ذخیره عکس
     save_dir = Path("media/avatars")
     save_dir.mkdir(parents=True, exist_ok=True)
-    filename = f"{user_id}_{int(datetime.now(UTC).timestamp())}.jpg"
+    filename = f"{user_id}_{int(datetime.now().timestamp())}.jpg"
     file_path = save_dir / filename
     cv2.imwrite(str(file_path), image_np)
 

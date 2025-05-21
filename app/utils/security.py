@@ -33,10 +33,7 @@ def create_access_token(
 ) -> str:
     """Create JWT access token"""
     to_encode = data.copy()
-    if expires_delta:
-        expire = datetime.now() + (expires_delta or timedelta(minutes=15))
-    else:
-        expire = datetime.now() + (expires_delta or timedelta(minutes=15))
+    expire = datetime.now() + (expires_delta or timedelta(minutes=15))
     to_encode.update({"exp": expire})
     encoded_jwt = jwt.encode(
         to_encode, settings.SECRET_KEY, algorithm=settings.ALGORITHM
@@ -44,29 +41,52 @@ def create_access_token(
     return encoded_jwt
 
 
-# def create_access_token(
-#     data: dict,
-#     settings: Settings,
-#     expires_delta: timedelta | None = None,
-# ) -> str:
-#     to_encode = data.copy()
-#     expire = datetime.now() + (expires_delta or timedelta(minutes=50000))
-#     to_encode.update({"exp": expire})
-#     encoded_jwt = jwt.encode(
-#         to_encode, settings.SECRET_KEY, algorithm=settings.ALGORITHM
-#     )
-#     return encoded_jwt
+def decode_access_token(token: str, settings: Settings) -> dict:
+    """
+    Decode and validate JWT token
+    Returns the decoded payload if valid
+    Raises HTTPException if token is invalid
+    """
+    if not token:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="No token provided",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
 
-
-def decode_access_token(token: str, settings):
     try:
+        # Remove 'Bearer ' prefix if present
+        if token.startswith("Bearer "):
+            token = token.split(" ")[1]
+
         payload = jwt.decode(
             token, settings.SECRET_KEY, algorithms=[settings.ALGORITHM]
         )
-        return payload.get("mobile")
-    except JWTError:
+
+        # Validate required fields
+        if not payload.get("sub"):
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                detail="Invalid token: missing subject",
+                headers={"WWW-Authenticate": "Bearer"},
+            )
+
+        # Check expiration
+        exp = payload.get("exp")
+        if exp and datetime.now() > datetime.fromtimestamp(exp):
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                detail="Token has expired",
+                headers={"WWW-Authenticate": "Bearer"},
+            )
+
+        return payload
+
+    except JWTError as e:
         raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid token"
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=f"Invalid token: {str(e)}",
+            headers={"WWW-Authenticate": "Bearer"},
         )
 
 

@@ -72,20 +72,30 @@ async def protected_route(current_user: dict = Depends(get_current_user)):
     return {"message": "This is a protected route", "user": current_user}
 
 
-@router.post("/register", response_model=UserResponse)
-async def register(
-    user_data: UserCreate, db: AsyncSession = Depends(get_db)
-) -> UserResponse:
-    """Register a new user"""
+@router.post("/register", response_model=dict)
+async def register(user_data: UserCreate, db: AsyncSession = Depends(get_db)) -> dict:
+    """Register a new user and automatically log them in"""
+    # Create the user
     user = await create_user(user_data, db)
-    return UserResponse(
-        id=user.id,
-        username=user.username,
-        email=user.email,
-        firstname=user.firstname,
-        lastname=user.lastname,
-        is_active=user.is_active,
+
+    # Automatically log in the user
+    tokens = await create_tokens(user)
+    await update_user_tokens_in_db(
+        user, tokens["access_token"], tokens["refresh_token"], tokens.get("expires_at")
     )
+
+    # Return both user information and tokens
+    return {
+        "user": UserResponse(
+            id=user.id,
+            username=user.username,
+            email=user.email,
+            firstname=user.firstname,
+            lastname=user.lastname,
+            is_active=user.is_active,
+        ),
+        "tokens": TokenResponse(**tokens),
+    }
 
 
 @router.post("/login", response_model=TokenResponse)

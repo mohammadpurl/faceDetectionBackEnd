@@ -1,7 +1,7 @@
 from typing_extensions import Annotated
 from fastapi import Depends, FastAPI
 from app.config import Settings, get_settings
-from app.routers import auth, user
+from app.routers import auth, user, image
 from app.db.session import engine, Base, init_db
 import os
 import logging
@@ -14,7 +14,7 @@ import time
 from datetime import datetime
 from app.db.session import create_tables
 
-app = FastAPI()
+app = FastAPI(title="Face Detection API")
 
 # تنظیمات لاگر
 logger = logging.getLogger(__name__)
@@ -121,3 +121,9 @@ async def startup_event():
 # ثبت روترها
 app.include_router(auth.router, prefix="/auth", tags=["authentication"])
 app.include_router(user.router, prefix="/user", tags=["User"])
+app.include_router(image.router, prefix="/image", tags=["Image Processing"])
+
+
+@app.get("/")
+async def root():
+    return {"message": "Welcome to Face Detection API"}

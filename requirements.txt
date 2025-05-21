@@ -18,3 +18,5 @@ alembic
 requests
 opencv-python       
 mediapipe
+numpy   
+types-passlib
