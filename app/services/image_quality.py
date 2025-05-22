@@ -31,10 +31,10 @@ class ImageQualityChecker:
             brightness = self._check_brightness(image)
             resolution = self._check_resolution(image)
 
-            # تنظیم پارامترهای بررسی کیفیت
-            is_blurry = blur_score < 50  # کاهش آستانه تار بودن
-            is_brightness_ok = 20 <= brightness <= 80  # افزایش محدوده روشنایی
-            is_resolution_ok = resolution >= 400  # کاهش حداقل رزولوشن
+            # تنظیم پارامترهای بررسی کیفیت با حساسیت کمتر
+            is_blurry = blur_score < 30  # کاهش آستانه تار بودن
+            is_brightness_ok = 10 <= brightness <= 90  # افزایش محدوده روشنایی
+            is_resolution_ok = resolution >= 300  # کاهش حداقل رزولوشن
 
             return {
                 "is_blurry": is_blurry,
@@ -46,7 +46,7 @@ class ImageQualityChecker:
                     not is_blurry  # تصویر نباید خیلی تار باشد
                     and face_detected  # باید چهره در تصویر وجود داشته باشد
                     and is_brightness_ok  # روشنایی باید در محدوده مناسب باشد
-                    and is_resolution_ok  # حداقل رزولوشن 400 پیکسل
+                    and is_resolution_ok  # حداقل رزولوشن 300 پیکسل
                 ),
             }
 
@@ -60,8 +60,8 @@ class ImageQualityChecker:
         بررسی تار بودن تصویر با استفاده از لاپلاسین
         """
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-        # افزایش اندازه کرنل برای تشخیص بهتر تار بودن
-        laplacian_var = cv2.Laplacian(gray, cv2.CV_64F, ksize=3).var()
+        # کاهش اندازه کرنل برای حساسیت کمتر
+        laplacian_var = cv2.Laplacian(gray, cv2.CV_64F, ksize=5).var()
         return laplacian_var
 
     def _detect_face(self, image: np.ndarray) -> bool:
@@ -69,13 +69,13 @@ class ImageQualityChecker:
         تشخیص وجود چهره در تصویر
         """
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-        # تنظیم پارامترهای تشخیص چهره برای بهبود دقت
+        # تنظیم پارامترهای تشخیص چهره برای حساسیت کمتر
         faces = self.face_cascade.detectMultiScale(
             gray,
-            scaleFactor=1.1,
-            minNeighbors=4,  # کاهش تعداد همسایه‌ها برای تشخیص بهتر
-            minSize=(20, 20),  # کاهش حداقل اندازه چهره
-            maxSize=(300, 300),  # افزایش حداکثر اندازه چهره
+            scaleFactor=1.2,  # افزایش برای تشخیص بهتر چهره‌های کوچکتر
+            minNeighbors=3,  # کاهش تعداد همسایه‌ها
+            minSize=(15, 15),  # کاهش حداقل اندازه چهره
+            maxSize=(400, 400),  # افزایش حداکثر اندازه چهره
         )
         return len(faces) > 0
 
@@ -84,15 +84,15 @@ class ImageQualityChecker:
         بررسی روشنایی تصویر
         """
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-        # محاسبه میانگین روشنایی با در نظر گرفتن وزن بیشتر برای نواحی مرکزی
+        # محاسبه میانگین روشنایی با وزن کمتر برای نواحی مرکزی
         height, width = gray.shape
         center_y, center_x = height // 2, width // 2
-        center_weight = 2.0
+        center_weight = 1.5  # کاهش وزن مرکز
         weights = np.ones_like(gray, dtype=float)
         y_indices, x_indices = np.ogrid[:height, :width]
         distance = np.sqrt((y_indices - center_y) ** 2 + (x_indices - center_x) ** 2)
         weights = 1.0 + (center_weight - 1.0) * np.exp(
-            -distance / (min(height, width) / 4)
+            -distance / (min(height, width) / 3)  # افزایش ناحیه مرکزی
         )
         return float(np.average(gray, weights=weights))
 
